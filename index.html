@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/Tii Gaming.png">
+
+    <!-- og -->
+
+    <meta property="og:image" href="./img/Tii Gaming.png"/>
+    <meta property="og:width" content="1200">
+    <meta property="og:height" content="1200">
+</head>
+<body>
+    <div id="progressbar"></div>
+
+    <!-- navbar - header -->
+
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo1.png" alt="logo"></a>
+            <a href="#" class="header_logo">Tii</a>
+        </div>
+        <nav class="nav" id="nav-menu"> 
+            <ion-icon name="close" class="header_close" id="close-menu"></ion-icon>
+             <!-- facebook -->
+           
+            <!-- navbar -->
+            <ul class="nav_list">
+                <li class="nav_item"><a href="#html" class="nav_link">ទំព័រដេីម</a></li>
+                <li class="nav_item"><a href="#Page" class="nav_link">Page ទាំងឣស់</a></li>
+                <li class="nav_item"><a href="#TikTokខ្ញំុ" class="nav_link">TikTokខ្ញំុ</a></li>
+                <li class="nav_item"><a href="#facebookរបស់ខ្ញំុ" class="nav_link">facebookរបស់ខ្ញំុ</a></li>        
+            </ul>
+        </nav>
+        <!-- menu-nabar --> 
+        <ion-icon name="menu" class="header_toggle" id="toggle-menu"></ion-icon>
+    </header>
+    <div class="Page" id="Page">
+        <div class="card">
+            <a href="https://www.facebook.com/TiiGamingFF1/?ref=pages_you_manage"><img src="./img/Tii Gaming.png"></a>
+            <h1>Page</h1>
+            <p>Live Game</p>
+            <div class="links">
+                <a href="https://www.facebook.com/TiiGamingFF1/?ref=pages_you_manage"><img src="./img/facebook.png"></a>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://www.facebook.com/TiiGaminguey/?ref=pages_you_manage"><img src="./img/logo1.png"></a>
+            <h1>Page</h1>
+            <p>Music Video</p>
+            <div class="links">
+                <a href="https://www.facebook.com/TiiGaminguey/?ref=pages_you_manage"><img src="./img/facebook.png"></a>
+            </div>
+        </div>
+        </div>
+        <div class="Page" id="TikTokខ្ញំុ">
+        <div class="card">
+            <a href="https://www.tiktok.com/@tpff1111"><img src="./img/TikTok.png"></a>
+            <h1>TikTok</h1>
+            <p>Post Video Game</p>
+            <div class="links">
+                <a href="https://www.tiktok.com/@tpff1111"><img src="./img/TikTok.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="Page" id="facebookរបស់ខ្ញំុ">
+        <div class="card">
+            <a href="https://www.facebook.com/micky.pro.16"><img src="./img/facebook.png"></a>
+            <h1>facebookរបស់ខ្ញំុ</h1>
+            <div class="links">
+                <a href="https://www.facebook.com/micky.pro.16"><img src="./img/facebook.png"></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    
+       
+    
+    
+        <!-- javascrpit -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        
+    
+    
+    <!-- javascrpit text -->
+
+<script>
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop(),
+    dh = $(document).height(),
+    wh = $(window).height();
+    scrollPercent = (scroll / (dh-wh)) * 100;
+    $('#progressbar').css('height', scrollPercent + '%');
+})    
+</script>
+
+
+<script>
+const navMenu = document.getElementById('nav-menu'),
+    toggleMenu = document.getElementById('toggle-menu'),
+    closeMenu = document.getElementById('close-menu')
+
+toggleMenu.addEventListener('click',() => {
+    navMenu.classList.toggle('show')
+})
+
+closeMenu.addEventListener('click',() => {
+    navMenu.classList.remove('show')
+})
+</script>
+
+
+
+
+</body>
+</html>
